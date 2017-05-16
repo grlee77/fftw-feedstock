@@ -5,7 +5,8 @@ project (fftw3)
 
 # Standard:          /DWIN32 /D_WINDOWS /W3 /Zm1000 /EHsc /GR
 if (WIN32)
-    add_definitions(-D_OPENMP -DLIBFFTWF33_EXPORTS /openmp /bigobj) # Visual Studio 2005 and up supports OpenMP
+#    add_definitions(-D_OPENMP -DLIBFFTWF33_EXPORTS /openmp /bigobj) # Visual Studio 2005 and up supports OpenMP
+    add_definitions(-DLIBFFTWF33_EXPORTS /openmp /bigobj)
 endif (WIN32)
 
 if (BUILD_SHARED_LIBS)
