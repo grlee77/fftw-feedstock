@@ -40,7 +40,8 @@ test:
     # Verify shared libraries are installed
     {% set fftw_libs = [
             "libfftw3",
-            "libfftw3_threads",
+            "libfftw3_threads",  # [not win]
+            "libfftw3_omp",  # [win]
             "libfftw3f",  # [not win]
             "libfftw3f_threads",  # [not win]
             "libfftw3l",  # [not win]
