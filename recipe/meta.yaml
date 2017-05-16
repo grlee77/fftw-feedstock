@@ -24,6 +24,7 @@ requirements:
     - perl 5.22.2.1
     - cmake >=3  # [win]
     - toolchain  # [win]
+    - msinttypes  # [win and py27]
 
 test:
 test:
