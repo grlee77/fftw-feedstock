@@ -39,10 +39,10 @@ test:
     {% set fftw_libs = [
             "libfftw3",
             "libfftw3_threads",
-            "libfftw3f",
-            "libfftw3f_threads",
-            "libfftw3l",
-            "libfftw3l_threads",
+            "libfftw3f",  # [not win]
+            "libfftw3f_threads",  # [not win]
+            "libfftw3l",  # [not win]
+            "libfftw3l_threads",  # [not win]
     ] %}
 
     {% for lib in fftw_libs %}

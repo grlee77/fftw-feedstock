@@ -9,7 +9,7 @@ mkdir buildw && cd buildw
 
 set CMAKE_CONFIG="Release"
 
-cmake -LAH -G"NMake Makefiles"                               ^
+cmake -LAH -G"NMake Makefiles" -D"BUILD_SHARED_LIBS:BOOL=ON" ^
     -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ..
 if errorlevel 1 exit 1
 
