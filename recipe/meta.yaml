@@ -26,6 +26,13 @@ requirements:
     - toolchain  # [win]
 
 test:
+test:
+  requires:
+    - python 2.7.*  # [win and py27]
+    - python 3.4.*  # [win and py34]
+    - python 3.5.*  # [win and py35]
+    - python 3.6.*  # [win and py36]
+
   commands:
     - exit $(test -f ${PREFIX}/lib/libfftw3f.a)          # [not win]
     - exit $(test -f ${PREFIX}/lib/libfftw3.a)           # [not win]
