@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
-export CFLAGS="${CFLAGS} -I${PREFIX}/include"
+export CFLAGS="${CFLAGS} -I${PREFIX}/include -O3"
 
 CONFIGURE="./configure --prefix=$PREFIX --with-pic --enable-shared --enable-threads --disable-fortran"
 
