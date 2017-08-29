@@ -20,9 +20,9 @@ TEST_CMD="eval cd tests && make check-local && cd -"
 #
 build_cases=(
     # single
-    "$CONFIGURE --enable-float --enable-sse --enable-sse2 --enable-avx"
+    "$CONFIGURE --enable-float --enable-sse --enable-sse2 --enable-avx --enable-avx2"
     # double
-    "$CONFIGURE --enable-sse2 --enable-avx"
+    "$CONFIGURE --enable-sse2 --enable-avx --enable-avx2"
     # long double (SSE2 and AVX not supported)
     "$CONFIGURE --enable-long-double"
 )
