@@ -17,6 +17,7 @@ cmake -LAH -G"NMake Makefiles"                             ^
   -DWITH_COMBINED_THREADS=ON                               ^
   -DENABLE_SSE2=ON                                         ^
   -DENABLE_AVX=ON                                          ^
+  -DENABLE_OPENMP=ON                                       ^
   ..
 if errorlevel 1 exit 1
 
@@ -36,6 +37,7 @@ cmake -LAH -G"NMake Makefiles"                             ^
   -DWITH_COMBINED_THREADS=ON                               ^
   -DENABLE_SSE2=ON                                         ^
   -DENABLE_AVX=ON                                          ^
+  -DENABLE_OPENMP=ON                                       ^
   -DENABLE_FLOAT=ON                                        ^
   ..
 if errorlevel 1 exit 1

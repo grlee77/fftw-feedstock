@@ -60,7 +60,7 @@ test:
     - python -c "import ctypes; ctypes.cdll[r'${PREFIX}/lib/{{ lib }}${SHLIB_EXT}']"  # [unix]
     {% endfor %}
 
-    {% set fftw_libs = ["fftw3f", "fftw3"] %}
+    {% set fftw_libs = ["fftw3f", "fftw3", "fftw3f_omp", "fftw3_omp"] %}
 
     {% for base in fftw_libs %}
     - if not exist %LIBRARY_LIB%\\{{ base }}.lib exit 1  # [win]
